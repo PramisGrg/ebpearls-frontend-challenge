@@ -4,8 +4,10 @@ import { TaskItem } from "./task-item";
 export const TaskList = () => {
   const { task } = useTaskStore();
 
+  console.log(task, "Thisi stask");
+
   return (
-    <section className="mt-6">
+    <section>
       <ul className="space-y-3">
         {task.map((taskItem) => (
           <TaskItem key={taskItem.id} taskItem={taskItem} />

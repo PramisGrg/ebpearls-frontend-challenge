@@ -6,9 +6,10 @@ import { useTaskStore } from "../../store/task-store";
 import { TaskList } from "./task-list";
 
 const TaskForm = () => {
-  const { setTask } = useTaskStore();
+  const { addTask } = useTaskStore();
 
   const {
+    reset,
     register,
     handleSubmit,
     formState: { errors },
@@ -17,7 +18,8 @@ const TaskForm = () => {
   });
 
   const onSubmit = (data: TTaskSchema) => {
-    setTask(data.task);
+    addTask(data.task);
+    reset();
   };
 
   return (

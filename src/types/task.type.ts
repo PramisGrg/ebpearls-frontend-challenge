@@ -1,11 +1,11 @@
-export interface Task {
+export interface TTask {
   id: string;
   task: string;
   completed: boolean;
 }
 
 export interface TaskStore {
-  task: Task[];
+  task: TTask[];
   addTask: (task: string) => void;
   tooggleTask: (id: string) => void;
   deleteTask: () => void;
