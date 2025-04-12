@@ -2,6 +2,7 @@ import { PersonStanding } from "lucide-react";
 import { TicketCheck } from "lucide-react";
 import { HandCoins } from "lucide-react";
 import { MousePointerClick } from "lucide-react";
+import { DollarSign } from "lucide-react";
 import { Split } from "lucide-react";
 
 export const featuresData = [
@@ -24,7 +25,7 @@ export const featuresData = [
     title: "Simple pricing",
     description:
       "Only pay for what you use, if you don’t need us, there are no cost.",
-    icon: HandCoins,
+    icon: DollarSign,
   },
   {
     id: 4,
@@ -44,7 +45,7 @@ export const featuresData = [
     id: 5,
     title: "Invest in your business",
     description:
-      "Self-serve online portal available 24/7 or connect from your CRM or invoicing platform.​",
-    icon: Split,
+      "Only pay for what you use, if you don’t need us, there are no costs.​",
+    icon: HandCoins,
   },
 ];
