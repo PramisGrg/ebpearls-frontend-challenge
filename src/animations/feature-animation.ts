@@ -7,7 +7,7 @@ export const featureAnimations = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.4 * i,
+      delay: 0.1 * i,
       ease: "easeInOut",
     },
   }),
