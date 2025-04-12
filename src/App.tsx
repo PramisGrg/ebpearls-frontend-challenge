@@ -1,3 +1,4 @@
+import Contact from "./components/contact";
 import Feature from "./components/features";
 import HeroSection from "./components/hero";
 import Navbar from "./components/navbar";
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <Feature />
+      <Contact />
     </div>
   );
 }
