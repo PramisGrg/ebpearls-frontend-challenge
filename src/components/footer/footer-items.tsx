@@ -1,4 +1,3 @@
-import React from "react";
 import { footerData } from "../../data/footer-data";
 
 const FooterItems = () => {

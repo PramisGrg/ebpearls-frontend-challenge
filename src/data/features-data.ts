@@ -42,7 +42,7 @@ export const featuresData = [
     icon: Split,
   },
   {
-    id: 5,
+    id: 6,
     title: "Invest in your business",
     description:
       "Only pay for what you use, if you don’t need us, there are no costs.​",
