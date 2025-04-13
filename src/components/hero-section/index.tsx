@@ -1,6 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useEffect, useState, useCallback } from "react";
-import backgroundImage from "../assets/images/background.svg";
+import backgroundImage from "../../assets/images/background.svg";
 
 const slides = [
   {
@@ -41,14 +41,16 @@ const HeroSection = () => {
       <div ref={emblaRef} className="overflow-hidden h-full">
         <div className="flex h-full">
           {slides.map((slide, index) => (
-            <div
+            <article
               key={index}
               className="min-w-full h-full flex flex-col justify-center items-start md:px-24 px-6 text-white"
             >
-              <h1 className="text-4xl w-[60%] lg:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl lg:w-[60%] w-[95%] lg:text-6xl font-bold leading-tight">
                 {slide.title}
               </h1>
-              <p className="text-lg mt-4">{slide.description}</p>
+              <p className="text-lg lg:w-[60%] w-[95%] mt-4">
+                {slide.description}
+              </p>
               <button className="mt-6 px-6 py-3 bg-white text-primary rounded-full font-semibold shadow-md hover:bg-gray-100 transition">
                 Get started
               </button>
@@ -58,12 +60,12 @@ const HeroSection = () => {
                     key={index}
                     onClick={() => emblaApi?.scrollTo(index)}
                     className={`w-3 h-3 rounded-full transition-colors ${
-                      index === selectedIndex ? "bg-fuchsia-500" : "bg-gray-500"
+                      index === selectedIndex ? "bg-primary" : "bg-gray-500"
                     }`}
                   />
                 ))}
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

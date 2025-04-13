@@ -11,7 +11,6 @@ export const MobileNavbar = ({ open, setOpen }: MobileNavbarProps) => {
 
   return (
     <motion.div
-      key="mobile-menu"
       initial={{ y: -20 }}
       animate={{ y: 0 }}
       exit={{ y: -20 }}

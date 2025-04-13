@@ -6,7 +6,9 @@ const DesktopNavbar = () => {
     <div className="hidden lg:flex w-full justify-between items-center gap-6">
       <header className="flex gap-4 items-center">
         <img src={logo} alt="Logo" className="w-12 h-12" />
-        <p className="font-bold text-neutral-600 text-2xl">FinanceRestro</p>
+        <p className="font-bold font-serif text-neutral-600 text-2xl">
+          FinanceRestro
+        </p>
       </header>
       <ul className="flex gap-6 items-center">
         {navbarData.map((item) => (

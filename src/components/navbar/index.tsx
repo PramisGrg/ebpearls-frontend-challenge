@@ -14,7 +14,9 @@ const Navbar = () => {
         <div className="lg:hidden flex w-full justify-between">
           <header className="flex gap-4 items-center">
             <img src={logo} alt="Logo" className="w-12 h-12" />
-            <p className="font-bold text-neutral-600 text-2xl">FinanceRestro</p>
+            <p className="font-bold font-sans text-neutral-600 text-2xl">
+              FinanceRestro
+            </p>
           </header>
           <button
             className="relative w-8 h-8 flex items-center justify-center
