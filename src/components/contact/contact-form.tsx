@@ -4,9 +4,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "../ui/input";
 import { cn } from "../../libs/utlis";
 import { Textarea } from "../ui/text-area";
+import { toast } from "sonner";
 
 const ContactForm = () => {
   const {
+    reset,
     register,
     handleSubmit,
     formState: { errors },
@@ -16,6 +18,13 @@ const ContactForm = () => {
 
   const onSubmit = (data: TContactSchema) => {
     console.log(data, "This is data");
+    toast(
+      <div>
+        <h1 className="font-bold">Form Submitted: </h1>
+        <code>{JSON.stringify(data, null, 2)}</code>
+      </div>
+    );
+    reset();
   };
 
   return (
@@ -72,7 +81,7 @@ const ContactForm = () => {
       </div>
 
       <button
-        className="bg-primary text-white px-6 py-3 rounded-full cursor-pointer"
+        className="bg-button text-white px-6 py-3 rounded-full cursor-pointer"
         type="submit"
       >
         Submit

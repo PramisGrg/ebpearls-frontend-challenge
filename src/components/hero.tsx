@@ -7,7 +7,7 @@ const HeroSection = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="md:px-24 px-6 text-white">
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+        <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
           Get instant cash <br />
           flow with invoice <br />
           factoring

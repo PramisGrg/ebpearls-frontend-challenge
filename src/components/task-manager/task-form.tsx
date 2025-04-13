@@ -1,8 +1,8 @@
-import { Input } from "../ui/input";
-import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
 import { taskSchema, TTaskSchema } from "../../schemas/task.schema";
 import { useTaskStore } from "../../store/task-store";
+import { Input } from "../ui/input";
 import { TaskList } from "./task-list";
 
 const TaskForm = () => {
@@ -34,7 +34,7 @@ const TaskForm = () => {
               <p className="text-sm text-red-500">{errors.task.message}</p>
             )}
           </div>
-          <button className="bg-primary cursor-pointer text-white px-6 py-3 rounded-full">
+          <button className="bg-button cursor-pointer text-white px-6 py-3 rounded-full">
             Add Task
           </button>
         </form>

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { cn } from "../../libs/utlis";
 import { useTaskStore } from "../../store/task-store";
 import { TTask } from "../../types/task.type";
@@ -6,7 +7,14 @@ export const TaskItem = ({ taskItem }: { taskItem: TTask }) => {
   const { tooggleTask } = useTaskStore();
 
   return (
-    <li className="flex items-center">
+    <motion.li
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 10 }}
+      transition={{ duration: 0.2 }}
+      key={taskItem.id}
+      className="flex items-center"
+    >
       <input
         onChange={() => tooggleTask(taskItem.id)}
         type="checkbox"
@@ -20,6 +28,6 @@ export const TaskItem = ({ taskItem }: { taskItem: TTask }) => {
       >
         {taskItem.task}
       </label>
-    </li>
+    </motion.li>
   );
 };

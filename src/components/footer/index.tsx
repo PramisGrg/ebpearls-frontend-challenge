@@ -4,7 +4,7 @@ import linkedinImage from "../../assets/icons/linkedin.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary pt-24 space-y-12 lg:px-24 px-6 text-neutral-800">
+    <footer className="bg-secondary lg:pt-24 pt-14 space-y-12 lg:px-24 px-6 text-neutral-800">
       <div className="lg:flex gap-24 space-y-12 lg:space-y-0">
         <section className="lg:w-[30%] space-y-4">
           <p className="text-base leading-relaxed">
