@@ -10,7 +10,7 @@ export const TaskItem = ({ taskItem }: { taskItem: TTask }) => {
       <input
         onChange={() => tooggleTask(taskItem.id)}
         type="checkbox"
-        className="accent-primary w-5 h-5 mr-2"
+        className="accent-primary w-5 h-5 mr-2 cursor-pointer"
       />
       <label
         className={cn(
